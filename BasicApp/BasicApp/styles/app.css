@@ -1,0 +1,174 @@
+body{
+	background: rgba(0,0,0,0.05);
+}
+#header {
+    height: 64px;
+    min-height: 64px;
+    max-height: 64px;
+    z-index: 55!important;
+    background-color: rgb(255,255,255);
+    color: rgb(0,0,0);
+}
+
+#header button{
+	margin: auto 5px;
+}
+
+#header button.user-details{
+	width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#header md-menu{
+	min-width: 100px;
+	margin: auto 10px;
+}
+
+#header button.user-details div{
+	height: 100%;
+    line-height: 64px;
+    padding: 0px 10px;
+    text-transform: capitalize;
+}
+
+#header button.user-details i.expand{
+	position: relative;
+    top: 24px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.profile-image{
+    font-size: 42px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 50%;
+    padding: 4px;
+    margin: 8px;
+    color: #fff;
+}
+
+.side-nav .logo-image{
+	display: block;
+    background: #039BE5;
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFF;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.side-nav button.logo{
+    position: relative;
+    top: -4px;
+    left: 0;
+    border-radius: 0;
+}
+
+.side-nav .md-toolbar-tools {
+	padding: 0 10px;
+}
+
+.side-nav.active .md-toolbar-tools {
+	padding: 0 5px;
+}
+
+md-sidenav .sidenav-toolbar{
+	background-color: rgba(255,255,255,.05);
+}
+
+md-sidenav.side-nav{
+	width: 240px;
+	height: 100%;
+}
+
+md-sidenav.side-nav.active {
+    width: 44px;
+}
+
+md-sidenav .sidenav-toolbar button {
+	position: absolute;
+    right: 10px;
+}
+
+md-sidenav.side-nav, md-sidenav md-content{
+    background-color: rgb(45,50,62);
+    color: rgba(255,255,255,0.7);
+    height: 100%;
+}
+
+md-sidenav ul{
+	padding: 0;
+	margin: 0;
+}
+
+md-sidenav li a{
+    display: flex;
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    text-decoration: none;
+    color: inherit;
+}
+
+md-sidenav li .title{
+    display: flex;
+    line-height: 34px;
+    font-size: 13px;
+}
+md-sidenav li a:hover{
+	background-color: rgba(0,0,0,0.5);
+}
+
+.menu-item button.menu-icon {
+    position: relative;
+    margin: 0;
+    margin-top: 2px;
+    padding: 0;
+    height: 16px;
+    line-height: 28px;
+    min-height: 28px;
+}
+
+.menu-item button.menu-icon i{
+    font-size: 16px;
+}
+
+.toolbar-separator {
+    width: 1px;
+    height: 100%;
+    background: rgba(0,0,0,0.177);
+}
+
+.menu-item-title{
+	outline: none;
+	cursor: pointer;
+}
+.user-details-card{
+	padding: 0;
+}
+.user-details-card md-menu-item{
+	height: 100%;
+}
+
+.user-details div span.check {
+    position: relative;
+    top: 40px;
+    left: -22px;
+    height: 14px;
+    background: rgb(76, 175, 80);
+    border-radius: 50%;
+    color: #fff;
+}
+.user-details div span.check i{
+    font-size: 14px;
+}
+
+#main-container md-content{
+	background-color: #dfdfdf;
+}

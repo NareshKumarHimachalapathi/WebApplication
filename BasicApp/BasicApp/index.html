@@ -1,0 +1,33 @@
+<html lang="en" ng-app="BasicApp">
+	<head>
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<!-- Angular Material style sheet -->
+ 	 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.css">
+		<link rel="stylesheet" href="styles/app.css">
+	</head>
+	<body ng-cloak ng-controller="RootController as vm">
+  
+		<!-- Angular Material requires Angular.js Libraries -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-aria.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.0-alpha.4/angular-ui-router.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-animate.js"></script>
+		
+
+		<!-- Angular Material Library -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.7.1/angular-material-icons.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.js"></script>
+		<div ng-include="'views/sharedViews/main.html'"> </div>
+  
+		<!-- Your application bootstrap  -->
+		<script type="text/javascript" src="appConfig.js"></script>
+		<script type="text/javascript" src="route.js"></script>
+		<script type="text/javascript" src="views/sharedViews/sideMenu/sideMenuConstants.js"></script>
+		<script type="text/javascript" src="views/sharedViews/rootController.js"></script>
+		<script type="text/javascript" src="views/home/home.controller.js"></script>
+		<script type="text/javascript" src="views/dashboard/dashboard.controller.js"></script>
+		<script type="text/javascript" src="views/report/report.controller.js"></script>
+
+	</body>
+</html>

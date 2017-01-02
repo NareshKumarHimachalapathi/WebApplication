@@ -1,0 +1,39 @@
+<md-sidenav
+	class="md-sidenav-left side-nav"
+	md-component-id="left"
+	md-is-locked-open = "true"
+	md-whiteframe="4"
+	md-disable-backdrop = "true"
+	ng-class="{active : !vm.sidemenuLocked}">
+
+	<md-toolbar class="sidenav-toolbar">
+		<div class="md-toolbar-tools">
+			<md-button class="md-icon-button logo" md-no-ink="false" aria-label="Side Menu " ng-click="vm.SetSideMenuLock('true');">
+		      	<span class="logo-image">B</span>
+		    </md-button>
+			<span ng-if="vm.sidemenuLocked">{{vm.sideMenuItems.Header}}</span>
+			<md-button class="md-icon-button" aria-label="Side Menu " ng-click="vm.SetSideMenuLock()" ng-if="vm.sidemenuLocked">
+		      	<i class="material-icons">arrow_back</i>
+		    </md-button>
+			
+		</div>
+	</md-toolbar>
+	<md-content layout style="padding: 15px 0px;">
+        <div flex>
+        	<ul>
+        		<li ng-repeat="item in vm.sideMenuItems.MenuItems" class="menu-item">
+        			<div layout="row" class="menu-item-title">
+                        <a ui-sref={{item.State}}>
+                            <md-button class="md-icon-button menu-icon" md-no-ink="false">
+                                <i class="material-icons">{{item.Icon}}</i>
+                            </md-button>
+                            <div ng-if="vm.sidemenuLocked" layout="row" flex>
+                                <span class='title'>{{item.Title}}</span>
+                            </div>
+                        </a>
+                    </div>
+        		</li>
+        	</ul>
+        </div>
+	</md-content>
+</md-sidenav>

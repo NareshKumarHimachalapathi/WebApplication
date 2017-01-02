@@ -1,0 +1,50 @@
+<md-toolbar class="md-hue-2" id="header">
+	<div layout="row">
+	    <div flex layout="row">
+		    <md-button class="md-icon-button" aria-label="Settings" >
+		      	<i class="material-icons">menu</i>
+		    </md-button>
+		    <md-button class="md-icon-button" aria-label="Settings"  >
+		      	<i class="material-icons">account_balance</i>
+		    </md-button>
+		    <md-button class="md-icon-button" aria-label="Settings" >
+		      	<i class="material-icons">phone</i>
+		    </md-button>
+		    <div class="toolbar-separator"></div>
+	    </div>
+	    <div flex layout="row" layout-align="end end">
+	    	<md-menu md-offset="0 64">
+				<md-button ng-click="$mdOpenMenu($event)" class="user-details" md-no-ink="false">
+	   				<div flex layout="row">
+	   					<i class="material-icons profile-image">person</i>
+	   					<span class="check"><i class="material-icons">check</i></span>
+	   					<span>Hi, Abc</span>
+	   					<span>
+	   						<i class="material-icons expand">expand_more</i>
+	   					</span>
+	   				</div>
+	 			</md-button>
+	 			<md-menu-content class="user-details-card">
+	   				<md-menu-item >
+	   					<md-card md-theme="default" >
+        					<md-card-title>
+          						<md-card-title-text>
+            						<span class="md-headline">Hi User</span>
+            						<span>000-000-1234</span>
+            						<span>xxxxxxxxxxx</span>
+         						</md-card-title-text>
+				          		<md-card-avatar>
+							      	<img class="md-user-avatar profile-image" src="images/profile.png">
+							    </md-card-avatar>
+				        	</md-card-title>
+				        	<md-card-actions layout="row" layout-align="start center">
+				          		<md-button>Profile</md-button>
+				          		<md-button>Sign-out</md-button>
+				        	</md-card-actions>
+				      	</md-card>
+	   				</md-menu-item>
+	   			</md-menu-content>
+			</md-menu>
+	    </div>
+	</div>
+</md-toolbar>
